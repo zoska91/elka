@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans|Roboto:100,400,700|Shadows+Into+Light&subset=latin-ext');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+wrap {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    height: 100vh;
+    background-image: url(img/drift-2321252_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+header img.logo {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, 0);
+    max-width: 50%;
+    max-height: 50%;
+}
+
+h2 {
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+header h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 8%;
+}
+
+header h1.nav {
+    display: none;
+}
+
+
+.headerNav {
+    display: none;
+
+}
+
+.headerNav.active {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+header ul {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    background-image: linear-gradient(90deg, transparent 0%, black 20%, black 80%, transparent 100%);
+    padding: 5% 0
+}
+
+header li {
+
+    flex-basis: 20%;
+    /* width: 80vw; */
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    display: block;
+    height: 80%;
+    width: 100%;
+}
+
+
+.far {
+
+    display: none;
+}
+
+.far.active {
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 4vh;
+    right: 4vh;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 6vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+/* KONIEC HEADERA */
+
+/* POCZATEK SECTION .ABOUT */
+
+
+.about {
+    margin-top: 8vh;
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+.about main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+
+}
+
+.about article {
+    padding: 3%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+}
+
+
+.logo2 {
+    width: 80%;
+    animation: move 8s linear infinite;
+}
+
+
+@keyframes move {
+    0% {
+        transform: scaleX(1)
+    }
+
+    3% {
+        transform: scaleX(-1)
+    }
+
+    6% {
+        transform: scaleX(1)
+    }
+
+    11% {
+        transform: scaleX(-1)
+    }
+
+    18% {
+        transform: scaleX(1)
+    }
+
+    25% {
+        transform: scaleX(-1)
+    }
+
+    40% {
+        transform: scaleX(1)
+    }
+
+    100% {
+        transform: scaleX(1)
+    }
+
+}
+
+
+
+.youtube {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+
+    align-content: center;
+    text-align: center;
+}
+
+.movies,
+.movie {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    margin-top: 8vh
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+    padding: 3%;
+    color: #999;
+    border: 2px solid #999;
+
+}
+
+.iframe {
+    width: 100%;
+    /* height: auto; */
+}
+
+
+footer {
+    background-image: linear-gradient(90deg, #333 0%, black 100%);
+    padding: 4%;
+    color: white;
+    font-size: 2vh;
+    text-align: right;
+}
+
+
+@media (orientation: landscape) {
+
+    header {
+        background-position: center;
+    }
+
+    .headerNav.active {
+        display: block;
+        height: auto;
+        width: 100vw;
+        position: fixed;
+        top: 0%;
+        right: 0;
+    }
+
+    header ul {
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        background-image: linear-gradient(90deg, transparent 0%, black 7%, black 90%, transparent 100%);
+        padding: 2%;
+    }
+
+    header a {
+        font-size: 3vw;
+    }
+
+    header img.logo {
+        left: 15%;
+        top: 8%;
+        max-width: 30%;
+        max-height: 30%;
+    }
+
+    h1 {
+        font-size: 10vh;
+    }
+
+    header h1 {
+        bottom: 5%;
+    }
+
+    .about main {
+        flex-direction: row;
+    }
+
+    .about article {
+        font-size: 6vh;
+    }
+
+    .logo2 {
+        margin: 20px;
+        height: 50%;
+        width: auto;
+    }
+
+    footer {
+        font-size: 5vh;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:650px) {
+    .movies {
+        flex-direction: row;
+    }
+
+    h3 {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .movie {
+        border: 2px solid #999;
+        flex-basis: 50%;
+    }
+}

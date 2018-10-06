@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans|Roboto:100,400,700|Shadows+Into+Light&subset=latin-ext');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ccc;
+}
+
+header {
+    position: relative;
+    background-image: url(img/front.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center
+}
+
+i {
+    position: fixed;
+    top: 14vh;
+    left: 3vw;
+    z-index: 2;
+    color: white;
+    font-size: 6vh;
+    border: 4px solid white;
+    padding: 4px;
+    text-shadow: 3px 3px 2px black;
+    box-shadow: 3px 3px 4px black;
+}
+
+h2 {
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5vh;
+    padding: 7px 0
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+
+li {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 5px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+li:nth-child(1) {
+    border: none;
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+li:nth-child(1) a {
+    color: darkred;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px white;
+}
+
+li:nth-child(3) {
+    border-left: none;
+}
+
+li:nth-child(2) {
+    border-top: none;
+}
